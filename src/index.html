@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="script.js"></script>
+        <title> Index </title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <ul id="navBar">
+            <a href="index.html"><li id="index">Index</li></a>
+            <a href="mytimetable.html"><li>Time Table</li></a>
+            <a href="coursevideos.html"><li>Course Videos</li></a>
+        </ul>
+
+        <!-- Profile includes display picture, names, linkedIn and Github logos -->
+        <section id="profile">
+            <div id="profileImage">
+                <img id="mypic" src="./assets/mypic.jpeg" onmouseover="enlarge(this)" onmouseout="backToNormal(this)">
+            </div>
+            <h1 id="nameHeading"> Sameet Asadullah - Student at FAST NUCES </h1>    
+            <div id="logos">
+                <a href="https://www.linkedin.com/in/sameet-asadullah-055004215/" target="_blank"><img id="logo" src="./assets//linkedin logo.png"></a>
+                <a href="https://github.com/SameetAsadullah" target="_blank"><img id="logo" src="./assets/github logo.png"></a>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h1 id="educatonHeading"> Education </h1>
+            <div id="institutes">
+                <div id="institute">
+                    <h2> FAST NUCES </h2>
+                    <p> BS(CS) </p>
+                    <p> 08/2018 - Present </p>
+                    <P> Islamabad, Pakistan </P>
+                </div>
+
+                <div id="institute">
+                    <h2> Islamabad Science School And College </h2>
+                    <p> Matric-FSC </p>
+                    <p> 06/2014 - 06/2018 </p>
+                    <P> Islamabad, Pakistan </P>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Projects -->
+        <section id="projects">
+            <h1 id="projectsHeading"> Projects (<span id="projectsCount">3</span>) </h1>
+            <ul id="projectsBlock">
+                <li class="project">
+                    <h2> Automate It (2021) </h2>
+                    <p>
+                        Home Automation System in Urdu language. It listens to what user has said and then does the task accordingly like Alexa.
+                        <br>
+                        <b>Technologies Used:</b> Raspberry Pi, React Native
+                    </p>
+                </li>
+                    
+                <li class="project">
+                    <h2> Automatic Time Table Generator (2020) </h2>
+                    <p>
+                        A time table generator which finds a best timetable with no clashes and fits every student and faculty.
+                        <br>
+                        <b>Technologies Used:</b> Genetic Algorithm
+                    </p>
+                </li>
+
+                <li class="project">
+                    <h2> Hotel Management System in Java (2020) </h2>
+                    <p>
+                        Manages all the advertised hotels of vendors and stores a list of all booked hotels of customers. Booking can be done using different search filters.
+                        <br>
+                        <b>Technologies Used:</b> Java
+                    </p>
+                </li>
+            </ul>
+
+            <div id="addProject">
+                <form id="#addProjectForm">
+                    <label class="labelsFont"> Title: </label>
+                    <textarea id="title" rows = "1" cols = "20" class="formInput"></textarea>
+                    <label class="labelsFont"> Year: </label>
+                    <textarea id="year" rows = "1" cols = "20" class="formInput"></textarea>
+                    <label class="labelsFont"> Description: </label>
+                    <textarea id="desc" rows = "3" cols = "40" class="formInput"></textarea>
+                    <br>
+                    <label class="technologiesInputStyling"> Technologies: </label>
+                    <input type="checkbox" id="technology1" class="checkBoxStyle" value="Raspberry Pi">
+                    <label for="technology1" class="technologiesInputStyling"> Raspberry Pi </label>
+                    <input type="checkbox" id="technology2" class="checkBoxStyle" value="React Native">
+                    <label for="technology2" class="technologiesInputStyling"> React Native </label>
+                    <input type="checkbox" id="technology3" class="checkBoxStyle" value="Genetic Algorithm">
+                    <label for="technology3" class="technologiesInputStyling"> Genetic Algorithm </label>
+                    <input type="checkbox" id="technology4" class="checkBoxStyle" value="Java">
+                    <label for="technology4" class="technologiesInputStyling"> Java </label>
+                    <input type="checkbox" id="technology5" class="checkBoxStyle" value="C/C++">
+                    <label for="technology5" class="technologiesInputStyling"> C/C++ </label>
+                    <br>
+                    <input type="button" value="Add Project" id="addProjectButton" onclick="addProject()">
+                    <br>
+                    <p id="errorMessage"></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- All Courses -->
+        <section id="courses">
+            <h1 id="coursesHeading"> Courses </h1>
+            <div id="coursesBlocks">
+                <!-- Major Courses Block -->
+                <div id="majorCourses">
+                    <h2> Major Courses </h2>
+                    <div class="coursesBlocks">
+                        <p> Programming Fundamentals </p>
+                        <p> Object Oriented Programming </p>
+                        <p> Data Structures </p>
+                        <p> Database Systems </p>
+                        <p> Computer Networks </p>
+                        <p> Artificial Intelligence </p>
+                        <p> Information Security </p>
+                    </div>
+                </div>
+
+                <!-- Other Courses Block -->
+                <div id="otherCourses">
+                    <h2> Other Courses </h2>
+                    <div class="coursesBlocks">
+                        <p> Islamic Studies </p>
+                        <p> Pakistan Studies </p>
+                        <p> Digital Logic Design </p>
+                        <p> Management </p>
+                        <p> Marketing </p>
+                        <p> Psychology </p>
+                        <p> Professional Practices in IT </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright footer -->
+        <footer>
+            <p> Copyright © 2022 My Portfolio. All rights reserved. </p>
+        </footer>
+    </body>
+</html>

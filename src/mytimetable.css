@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro');
+
+/* Applying to all css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar css */
+#navBar {
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Roboto Slab', serif;
+    padding-right: 17px;
+}
+  
+#navBar li {
+    display: inline-block;
+    padding: 19.5px;
+}
+  
+#navBar a {
+    color: white;
+    text-decoration: none;
+}
+
+#navBar :hover {
+    background-color: #1b1b1b;
+}
+
+#timetable {
+    background-color: #1b1b1b;
+}
+
+/* Time Table Design css */
+#timetableSection {
+    margin-top: 30px;
+    text-align: center;
+}
+
+textarea {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 3px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    border-spacing: 5px;
+}
+
+th {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding: 10px;
+    border: 2px solid black;
+    font-family: 'Roboto Slab', serif;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    background-color: rgb(191, 232, 248);
+    padding: 10px;
+    border: 1px solid black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+tr :hover {
+    background-color: rgb(126, 124, 209);
+}
+
+.buttonStyle {
+    padding: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#errorMessage {
+    color: red;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+/* Copyright Footer css */
+footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}

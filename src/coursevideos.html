@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="coursevideos.css">
+        <script src="script.js"></script>
+        <title> Course Videos </title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <ul id="navBar">
+            <a href="index.html"><li id="index">Index</li></a>
+            <a href="mytimetable.html"><li>Time Table</li></a>
+            <a href="coursevideos.html"><li>Course Videos</li></a>
+        </ul>
+
+        <!-- Displaying videos -->
+        <section class="videosSection">
+            <h1 class="heading"> HTML Videos </h1>
+            <div id="videosBlock">
+                <div class="singleVideoBlock">
+                    <video class="video" poster="./assets/HTML Poster 1.png">
+                        <source src="./assets/HTML Video 1.mp4" type="video/mp4">
+                    </video>
+                    <div id="myplayer">
+                        <button class="playerButton" onclick="play(this)"> Play </button>
+                        <button class="playerButton" onclick="pause(this)"> Pause </button>
+                        <button class="playerButton" onclick="changeSpeed('up', this)"> Faster </button>
+                        <button class="playerButton" onclick="changeSpeed('down', this)"> Slower </button>
+                        <button class="playerButton" onclick="changeVolume('up', this)"> Louder </button>
+                        <button class="playerButton" onclick="changeVolume('down', this)"> Softer </button>
+                    </div>
+                </div>
+
+                <div class="singleVideoBlock">
+                    <video class="video" poster="./assets/HTML Poster 2.png">
+                        <source src="./assets/HTML Video 2.mp4" type="video/mp4">
+                    </video>
+                    <div id="myplayer">
+                        <button class="playerButton" onclick="play(this)"> Play </button>
+                        <button class="playerButton" onclick="pause(this)"> Pause </button>
+                        <button class="playerButton" onclick="changeSpeed('up', this)"> Faster </button>
+                        <button class="playerButton" onclick="changeSpeed('down', this)"> Slower </button>
+                        <button class="playerButton" onclick="changeVolume('up', this)"> Louder </button>
+                        <button class="playerButton" onclick="changeVolume('down', this)"> Softer </button>
+                    </div>
+                </div>
+
+                <div class="singleVideoBlock">
+                    <video class="video" poster="./assets/HTML Poster 3.png">
+                        <source src="./assets/HTML Video 3.mp4" type="video/mp4">
+                    </video>
+                    <div id="myplayer">
+                        <button class="playerButton" onclick="play(this)"> Play </button>
+                        <button class="playerButton" onclick="pause(this)"> Pause </button>
+                        <button class="playerButton" onclick="changeSpeed('up', this)"> Faster </button>
+                        <button class="playerButton" onclick="changeSpeed('down', this)"> Slower </button>
+                        <button class="playerButton" onclick="changeVolume('up', this)"> Louder </button>
+                        <button class="playerButton" onclick="changeVolume('down', this)"> Softer </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="videosSection">
+            <h1 class="heading"> CSS Videos </h1>
+            <div id="videosBlock">
+                <div class="singleVideoBlock">
+                    <video class="video" poster="./assets/CSS Poster 1.png">
+                        <source src="./assets/CSS Video 1.mp4" type="video/mp4">
+                    </video>
+                    <div id="myplayer">
+                        <button class="playerButton" onclick="play(this)"> Play </button>
+                        <button class="playerButton" onclick="pause(this)"> Pause </button>
+                        <button class="playerButton" onclick="changeSpeed('up', this)"> Faster </button>
+                        <button class="playerButton" onclick="changeSpeed('down', this)"> Slower </button>
+                        <button class="playerButton" onclick="changeVolume('up', this)"> Louder </button>
+                        <button class="playerButton" onclick="changeVolume('down', this)"> Softer </button>
+                    </div>
+                </div>
+
+                <div class="singleVideoBlock">
+                    <video class="video" poster="./assets/CSS Poster 2.png">
+                        <source src="./assets/CSS Video 2.mp4" type="video/mp4">
+                    </video>
+                    <div id="myplayer">
+                        <button class="playerButton" onclick="play(this)"> Play </button>
+                        <button class="playerButton" onclick="pause(this)"> Pause </button>
+                        <button class="playerButton" onclick="changeSpeed('up', this)"> Faster </button>
+                        <button class="playerButton" onclick="changeSpeed('down', this)"> Slower </button>
+                        <button class="playerButton" onclick="changeVolume('up', this)"> Louder </button>
+                        <button class="playerButton" onclick="changeVolume('down', this)"> Softer </button>
+                    </div>
+                </div>
+
+                <div class="singleVideoBlock">
+                    <video class="video" poster="./assets/CSS Poster 3.png">
+                        <source src="./assets/CSS Video 3.mp4" type="video/mp4">
+                    </video>
+                    <div id="myplayer">
+                        <button class="playerButton" onclick="play(this)"> Play </button>
+                        <button class="playerButton" onclick="pause(this)"> Pause </button>
+                        <button class="playerButton" onclick="changeSpeed('up', this)"> Faster </button>
+                        <button class="playerButton" onclick="changeSpeed('down', this)"> Slower </button>
+                        <button class="playerButton" onclick="changeVolume('up', this)"> Louder </button>
+                        <button class="playerButton" onclick="changeVolume('down', this)"> Softer </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright footer -->
+        <footer>
+            <p>Copyright © 2022 My Portfolio. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

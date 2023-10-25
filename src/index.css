@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro');
+
+/* Applying to all css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar css */
+#navBar {
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Roboto Slab', serif;
+}
+  
+#navBar li {
+    display: inline-block;
+    padding: 19.5px;
+}
+
+#navBar a {
+    color: white;
+    text-decoration: none;
+}
+  
+#navBar :hover {
+    background-color: #1b1b1b;
+}
+
+#index {
+    background-color: #1b1b1b;
+}
+
+/* Profile Picture css */
+
+#profile {
+    background-color: rgb(0, 0, 0);
+    padding-top: 20px;
+}
+
+#profileImage {
+    width: 30%;
+    text-align: center;
+    float: left;
+}
+
+#mypic {
+    height: 110px;
+    width: 110px;
+    margin-top: 45px;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+/* Name heading css */
+
+#nameHeading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    margin-right: 30%;
+}
+
+/* LinkedIn and Github logos css */
+
+#logos {
+    text-align: center;
+    margin-top: 20px;
+    height: 90px;
+    margin-right: 30%;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+/* Projects css */
+#projects {
+    padding-top: 30px;
+    text-align: center;
+}
+
+#projectsHeading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    color: white;
+    background-color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.project {
+    margin-top: 30px;
+    display: inline-table;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.project h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+}
+
+.project p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgb(0, 0, 0);
+}
+
+#addProject {
+    margin-top: 20px;
+}
+
+.formInput {
+    margin-right: 20px;
+    margin-left: 5px
+}
+
+#addProjectButton {
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.checkBoxStyle {
+    margin-top: 10px;
+}
+
+.technologiesInputStyling {
+    margin-right: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.labelsFont {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#errorMessage {
+    margin-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: red;
+}
+
+textarea {
+    vertical-align: middle;
+    padding: 3px;
+}
+
+/* Courses css */
+#coursesHeading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 30px; 
+    background-color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#courses {
+    text-align: center;
+}
+
+#coursesBlocks {
+    display: flex;
+}
+
+#majorCourses, #otherCourses {
+    width: 50%;
+    margin-top: 20px;
+}
+
+#majorCourses h2, #otherCourses h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 26px;
+}
+
+.coursesBlocks {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.coursesBlocks p {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Education css */
+#educatonHeading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 30px; 
+    background-color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#education {
+    text-align: center;
+}
+
+#institutes {
+    display: flex;
+}
+
+#institute {
+    width: 50%;
+    margin-top: 20px;
+}
+
+#institute h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 26px;
+}
+
+#institute p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Copyright Footer css */
+footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* Mobile Devices */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    #profileImage {
+        height: 300px;
+    }
+
+    .project {
+        width: 300px;
+        height: 100px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #profileImage {
+        height: 250px;
+    }
+
+    .project {
+        width: 280px;
+        height: 100px;
+    }
+}
+
+/* Desktop Devices */
+@media only screen and (min-width: 992px) {
+    #profileImage {
+        height: 200px;
+    }
+
+    .project {
+        width: 138px;
+        height: 100px;
+    }
+
+    #projectsBlock {
+        max-inline-size: 1100px;
+        margin: 0 auto;
+    }
+}

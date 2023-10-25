@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro');
+
+/* Applying to all css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar css */
+#navBar {
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Roboto Slab', serif;
+}
+  
+#navBar li {
+    display: inline-block;
+    padding: 19.5px;
+}
+  
+#navBar a {
+    color: white;
+    text-decoration: none;
+}
+  
+#navBar :hover {
+    background-color: #1b1b1b;
+}
+
+#coursevideos {
+    background-color: #1b1b1b;
+}
+
+/* Displaying HTML Videos css */
+.videosSection {
+    text-align: center;
+}
+
+#videosBlock {
+    display: flex;
+}
+
+#myplayer {
+    margin-top: 5px;
+}
+
+.playerButton {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.singleVideoBlock {
+    width: 33.3%;
+}
+
+.heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 30px; 
+    background-color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.video {
+    width: 200px;
+    height: 110px;
+    margin-top: 30px;
+    border: 5px solid black;
+    padding: 5px;
+}
+
+/* Copyright Footer css */
+footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* Mobile Devices */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .video {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .video {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+/* Desktop Devices */
+@media only screen and (min-width: 992px) {
+    .video {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #videosBlock {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

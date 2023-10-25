@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mytimetable.css">
+        <script src="script.js"></script>
+        <title> TimeTable </title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <ul id="navBar">
+            <a href="index.html"><li id="index">Index</li></a>
+            <a href="mytimetable.html"><li>Time Table</li></a>
+            <a href="coursevideos.html"><li>Course Videos</li></a>
+        </ul>
+
+        <!-- Time Table Design and Data -->
+        <section id="timetableSection">
+            <textarea rows="1" cols="30" id="search" placeholder="Search Here" onkeyup="searchInTable(this)"></textarea>
+            <table id="myTimeTable">
+                <tr>
+                    <th></th>
+                    <th>10:00 - 11:20</th>
+                    <th>11:30 - 12:50</th>
+                    <th>2:00 - 2:30</th>
+                    <th>2:30 - 3:50</th>
+                    <th>3:50 - 4:50</th>
+                    <th>
+                        <input type="button" value="Edit" class="buttonStyle" onclick="editRow(this)">
+                        <input type="button" value="Delete" class="buttonStyle" onclick="deleteRow(this)">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Monday</th>
+                    <td>Web Programming (C)</td>
+                    <td>Software for Project Management (B)</td>
+                    <td>-</td>
+                    <td>Database Administration</td>
+                    <td>-</td>
+                    <td>
+                        <input type="button" value="Edit" class="buttonStyle" onclick="editRow(this)">
+                        <input type="button" value="Delete" class="buttonStyle" onclick="deleteRow(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <input type="button" value="Edit" class="buttonStyle" onclick="editRow(this)">
+                        <input type="button" value="Delete" class="buttonStyle" onclick="deleteRow(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td>Web Programming (C)</td>
+                    <td>Software for Project Management (B)</td>
+                    <td>-</td>
+                    <td>Database Administration</td>
+                    <td>-</td>
+                    <td>
+                        <input type="button" value="Edit" class="buttonStyle" onclick="editRow(this)">
+                        <input type="button" value="Delete" class="buttonStyle" onclick="deleteRow(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <input type="button" value="Edit" class="buttonStyle" onclick="editRow(this)">
+                        <input type="button" value="Delete" class="buttonStyle" onclick="deleteRow(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Technology Management (B)</td>
+                    <td>Technology Management (B)</td>
+                    <td>Technology Management (B)</td>
+                    <td>
+                        <input type="button" value="Edit" class="buttonStyle" onclick="editRow(this)">
+                        <input type="button" value="Delete" class="buttonStyle" onclick="deleteRow(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <th> 
+                        <input type="text" id="input1">
+                    </th>
+                    <td>
+                        <input type="text" id="input2">  
+                    </td>
+                    <td> 
+                        <input type="text" id="input3"> 
+                    </td>
+                    <td> 
+                        <input type="text" id="input4"> 
+                    </td>
+                    <td> 
+                        <input type="text" id="input5"> 
+                    </td>
+                    <td> 
+                        <input type="text" id="input6"> 
+                    </td>
+                    <td>
+                        <input type="button" value="Add Row" class="buttonStyle" onclick="addRow(this)">
+                        <p id="errorMessage"></p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Copyright footer -->
+        <footer>
+            <p>Copyright © 2022 My Portfolio. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
